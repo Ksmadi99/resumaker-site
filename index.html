@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumaker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>📝 Resumaker</h1>
+  <div class="container">
+    <div class="form-section">
+      <h2>Your Info</h2>
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="title" placeholder="Job Title">
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <button onclick="generateResume()">Preview Resume</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+    <div class="preview-section" id="resumePreview">
+      <h2 id="previewName">Name</h2>
+      <p id="previewTitle">Job Title</p>
+      <p id="previewSummary">Summary...</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
